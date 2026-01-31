@@ -3,6 +3,9 @@ const app = express();
 const PORT = 3000;
 const path = require("path");
 
+// set up static files serving
+app.use(express.static(path.join(__dirname, "public")));
+
 //setting view engine to the ejs
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -11,13 +14,24 @@ app.get("/", (req, res) => {
   res.render("home.ejs");
 });
 
-app.get("/hello",(req, res) =>{
+app.get("/hello", (req, res) => {
   res.send("Hello!");
-})
+});
 
-app.get("/rolldice",(req, res) =>{
+app.get("/rolldice", (req, res) => {
   let diceVal = Math.floor(Math.random() * 6) + 1;
-  res.render("rolldice.ejs", {diceVal});
+  res.render("rolldice.ejs", { diceVal });
+});
+
+app.get("/ig/:username", (req, res) => {
+  let { username } = req.params;
+  const instaData = require("./data.json");
+  const data = instaData[username];
+  if (data) {
+    res.render("igprofile.ejs", { data });
+  } else {
+    res.send("user not found");
+  }
 });
 
 app.get("/:username/:id", (req, res) => {

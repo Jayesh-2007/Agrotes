@@ -1,0 +1,141 @@
+{
+  "cats": {
+    "name": "cats",
+    "followers": 25000,
+    "following": 5,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006",
+        "likes": 200,
+        "comments": 17
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1592194996308-7b43878e84a6",
+        "likes": 312,
+        "comments": 19
+      }
+    ]
+  },
+
+  "dogs": {
+    "name": "dogs",
+    "followers": 48000,
+    "following": 12,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a",
+        "likes": 540,
+        "comments": 42
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1558788353-f76d92427f16",
+        "likes": 690,
+        "comments": 58
+      }
+    ]
+  },
+
+  "travelgram": {
+    "name": "travelgram",
+    "followers": 132000,
+    "following": 40,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "likes": 3200,
+        "comments": 210
+      }
+    ]
+  },
+
+  "foodie": {
+    "name": "foodie",
+    "followers": 89000,
+    "following": 28,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+        "likes": 1200,
+        "comments": 96
+      }
+    ]
+  },
+
+  "fitnesslife": {
+    "name": "fitnesslife",
+    "followers": 56000,
+    "following": 18,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1599058917212-d750089bc07b",
+        "likes": 870,
+        "comments": 61
+      }
+    ]
+  },
+
+  "techdaily": {
+    "name": "techdaily",
+    "followers": 104000,
+    "following": 22,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+        "likes": 2100,
+        "comments": 180
+      }
+    ]
+  },
+
+  "artstudio": {
+    "name": "artstudio",
+    "followers": 67000,
+    "following": 15,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19",
+        "likes": 980,
+        "comments": 74
+      }
+    ]
+  },
+
+  "naturehub": {
+    "name": "naturehub",
+    "followers": 145000,
+    "following": 33,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+        "likes": 4100,
+        "comments": 300
+      }
+    ]
+  },
+
+  "streetstyle": {
+    "name": "streetstyle",
+    "followers": 92000,
+    "following": 26,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38",
+        "likes": 1500,
+        "comments": 120
+      }
+    ]
+  },
+
+  "musicvibes": {
+    "name": "musicvibes",
+    "followers": 78000,
+    "following": 19,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d",
+        "likes": 1320,
+        "comments": 88
+      }
+    ]
+  }
+}

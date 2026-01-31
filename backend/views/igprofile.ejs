@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        <%= data.name %> | Instagram Profile
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <!-- Profile Header -->
+        <div class="header">
+            <div class="profile-info">
+                <h2>
+                    <%= data.name %>
+                </h2>
+                <div class="stats">
+                    <span>
+                        <%= data.followers %> followers
+                    </span>
+                    <span>
+                        <%= data.following %> following
+                    </span>
+                    <span>
+                        <%= data.posts.length %> posts
+                    </span>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+                <button class="btn follow-btn">Follow</button>
+                <button class="btn message-btn">Message</button>
+            </div>
+        </div>
+
+        <!-- Posts Section -->
+        <div class="posts">
+            <% data.posts.forEach(post=> { %>
+                <div class="post">
+                    <img src="<%= post.image %>" alt="post image" />
+                    <div class="post-info">
+                        <span>❤️ <%= post.likes %></span>
+                        <span>💬 <%= post.comments %></span>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+
+    </div>
+    <%- include("includes/footer.ejs") %>
+</body>
+
+</html>

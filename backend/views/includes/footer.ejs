@@ -1,0 +1,17 @@
+<footer class="insta-footer">
+  <div class="footer-links">
+    <% const links = [
+      "About", "Blog", "Jobs", "Help", "API", "Privacy", "Terms",
+      "Locations", "Instagram Lite", "Threads", "Contact Uploading & Non-Users"
+    ]; %>
+
+    <% links.forEach(link => { %>
+      <a href="#" class="footer-link"><%= link %></a>
+    <% }) %>
+  </div>
+
+  <div class="footer-meta">
+    <span>English</span>
+    <span>© <%= new Date().getFullYear() %> Instagram from Meta</span>
+  </div>
+</footer>
