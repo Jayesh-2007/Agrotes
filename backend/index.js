@@ -6,6 +6,10 @@ const path = require("path");
 // set up static files serving
 app.use(express.static(path.join(__dirname, "public")));
 
+// parse post request data 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+
 //setting view engine to the ejs
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -38,6 +42,16 @@ app.get("/:username/:id", (req, res) => {
   const username = req.params.username;
   const id = req.params.id;
   res.send(`Hello, ${username}! Your ID is ${id}`);
+});
+
+// register
+app.get("/register", (req, res) => {
+  res.send("standard get response");
+});
+
+app.post("/register", (req, res) => {
+  let {username, password} = req.body;
+  res.send(`You have registered with username: ${username} and password: ${password}`);
 });
 
 app.get("/search", (req, res) => {
